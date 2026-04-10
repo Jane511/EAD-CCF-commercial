@@ -1,0 +1,7 @@
+product_type,facilities,avg_utilisation,avg_base_ccf,avg_downturn_ccf
+commercial_mortgage,1,0.875,0.2,0.3
+guarantee,1,0.0,0.3,0.32
+overdraft,1,0.8625,0.65,0.75
+revolving_working_capital,1,0.5533,0.55,0.57
+term_loan,1,0.8167,0.0,0.05
+trade_finance,1,0.35,0.45,0.47

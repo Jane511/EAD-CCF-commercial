@@ -35,3 +35,13 @@ log/
 
 # Local reference docs (do not commit)
 EAD AND CCF instruction.pdf
+
+# Raw/source data (do not commit)
+data/raw/
+data/source/
+data/financials/
+data/interim/
+
+# Keep handoff inputs/outputs tracked
+!data/external/
+!data/processed/

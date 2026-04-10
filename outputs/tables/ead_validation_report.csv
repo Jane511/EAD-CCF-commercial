@@ -1,0 +1,4 @@
+check_name,status
+ccf_between_zero_and_one,True
+ead_not_below_drawn,True
+ead_within_limit,True

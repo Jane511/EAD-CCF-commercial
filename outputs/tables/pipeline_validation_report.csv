@@ -1,0 +1,17 @@
+check_name,status,detail
+required_output::ead_by_facility.csv,True,present and non-empty
+required_output::ccf_by_product.csv,True,present and non-empty
+required_output::utilisation_uplift_tables.csv,True,present and non-empty
+required_output::ead_validation_report.csv,True,present and non-empty
+non_negative::ead_by_facility.csv::utilisation,True,all values non-negative
+non_negative::ead_by_facility.csv::base_ccf,True,all values non-negative
+non_negative::ead_by_facility.csv::downturn_ccf,True,all values non-negative
+non_negative::ead_by_facility.csv::ead_central,True,all values non-negative
+non_negative::ead_by_facility.csv::ead_downturn,True,all values non-negative
+non_negative::ccf_by_product.csv::avg_utilisation,True,all values non-negative
+non_negative::ccf_by_product.csv::avg_base_ccf,True,all values non-negative
+non_negative::ccf_by_product.csv::avg_downturn_ccf,True,all values non-negative
+non_negative::utilisation_uplift_tables.csv::utilisation,True,all values non-negative
+non_negative::utilisation_uplift_tables.csv::base_ccf,True,all values non-negative
+non_negative::utilisation_uplift_tables.csv::utilisation_uplift,True,all values non-negative
+non_negative::utilisation_uplift_tables.csv::downturn_ccf,True,all values non-negative

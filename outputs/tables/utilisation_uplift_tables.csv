@@ -1,0 +1,7 @@
+product_type,utilisation,base_ccf,utilisation_uplift,downturn_ccf
+term_loan,0.8167,0.0,0.05,0.05
+overdraft,0.8625,0.65,0.1,0.75
+commercial_mortgage,0.875,0.2,0.1,0.3
+revolving_working_capital,0.5533,0.55,0.02,0.57
+trade_finance,0.35,0.45,0.02,0.47
+guarantee,0.0,0.3,0.02,0.32
