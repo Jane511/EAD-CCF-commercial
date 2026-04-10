@@ -1,0 +1,8 @@
+facility_type,segment,ccf_central,ccf_downturn
+term_loan,SME,0.00,0.00
+term_loan,Corporate,0.00,0.00
+revolver,SME,0.60,0.80
+revolver,Corporate,0.50,0.75
+development,Property,0.70,1.00
+trade,SME,0.40,0.65
+trade,Corporate,0.35,0.55

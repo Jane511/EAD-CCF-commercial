@@ -1,0 +1,8 @@
+check_name,status,failed_count,failed_exposures
+no_negative_balances,PASS,0,
+no_negative_limits,PASS,0,
+undrawn_non_negative,PASS,0,
+ccf_between_zero_and_one,PASS,0,
+ead_not_below_drawn,PASS,0,
+ead_within_limit,PASS,0,
+all_exposures_assigned_ccf,PASS,0,

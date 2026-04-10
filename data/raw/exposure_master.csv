@@ -1,0 +1,13 @@
+exposure_id,borrower_id,facility_type,product_type,segment,drawn_balance,current_limit,undrawn_limit,collateral_value,industry,default_flag,default_date,development_stage
+EXP001,B001,,Amortising business term loan,SME,125000,125000,,90000,Manufacturing,0,,
+EXP002,B002,,Overdraft,SME,42000,100000,,15000,Retail,0,,
+EXP003,B003,revolver,Revolving working capital line,Corporate,680000,900000,,125000,Wholesale,0,,
+EXP004,B004,,Construction facility,Property,2500000,4000000,,3200000,Real Estate,0,,early
+EXP005,B005,trade,Trade finance line,SME,180000,300000,,90000,Import Export,1,2025-11-15,
+EXP006,B006,development,Development facility,Property,1750000,2200000,,2100000,Property Development,0,,late
+EXP007,B007,term_loan,Equipment term loan,Corporate,540000,540000,,650000,Transport,0,,
+EXP008,B008,revolver,Cash flow revolver,SME,12000,50000,,10000,Hospitality,0,,
+EXP009,B009,trade,Trade working capital line,Corporate,450000,600000,,250000,Import Export,0,,
+EXP010,B010,,Overdraft,SME,135000,150000,,50000,Services,1,2025-10-02,
+EXP011,B011,,Amortising agribusiness loan,SME,80000,80000,,120000,Agriculture,0,,
+EXP012,B012,development,Land subdivision facility,Property,950000,1600000,,1200000,Property Development,0,,
