@@ -1,15 +1,17 @@
-# EAD-CCF-commercial
+# Commercial EAD & CCF Project
+
+This repository is the Exposure at Default and Credit Conversion Factor layer in the commercial credit-risk stack. It uses synthetic facility data, utilisation assumptions, and product-level CCF logic to estimate funded and unfunded exposure under a bank-style lending workflow. The main outputs are facility-level EAD tables, product-level CCF views, and validation artifacts that feed downstream expected loss, stress testing, pricing, and capital analysis.
 
 ## What this repo is
 
-This repo is the Exposure at Default and CCF engine for SME products for a bank-style Australian credit-risk portfolio demonstration. It uses public-data friendly and synthetic sample data only.
+This project demonstrates how a commercial lending portfolio can be translated into Exposure at Default measures using transparent, recruiter-friendly logic. It is built as a portfolio project rather than a production bank engine, so the assumptions are explainable and the data is synthetic where internal usage and drawdown history would normally be required.
 
-## Where it sits in the full credit-risk stack
+## Where it sits in the stack
 
 Upstream inputs:
-- facility master data
-- product CCF assumptions
-- utilisation history where available
+- facility and borrower portfolio data
+- product limit and drawn-balance information
+- utilisation and CCF assumptions where detailed behavioural history is unavailable
 
 Downstream consumers:
 - `expected-loss-engine-commercial`
@@ -17,21 +19,23 @@ Downstream consumers:
 - `RAROC-pricing-and-return-hurdle`
 - `RWA-capital-commercial`
 
-## Inputs
-
-The demo pipeline uses `data/raw/demo_portfolio.csv`, generated automatically when missing. The fields cover borrower IDs, facility IDs, segment, industry, product type, limit, drawn balance, collateral, PD, LGD, EAD, and borrower financial metrics.
-
-## What the pipeline does
-
-It loads demo data, builds reusable credit features, runs the `ead` engine, validates the outputs, and writes downstream-friendly CSV files.
-
-## Outputs
+## Key outputs
 
 - `outputs/tables/ead_by_facility.csv`
 - `outputs/tables/ccf_by_product.csv`
 - `outputs/tables/utilisation_uplift_tables.csv`
 - `outputs/tables/ead_validation_report.csv`
 - `outputs/tables/pipeline_validation_report.csv`
+
+## Repo structure
+
+- `data/`: raw, interim, processed, and external demo inputs
+- `src/`: reusable EAD and CCF pipeline logic
+- `scripts/`: wrapper scripts for running the pipeline
+- `docs/`: methodology, assumptions, data dictionary, and validation notes
+- `notebooks/`: reviewer-facing walkthrough notebooks
+- `outputs/`: exported tables, reports, and sample artifacts
+- `tests/`: validation and regression checks
 
 ## How to run
 
@@ -45,12 +49,8 @@ Or:
 python scripts/run_codex_pipeline.py
 ```
 
-## Limitations and synthetic-data note
+## Limitations / Demo-Only Note
 
-- Demo data is synthetic and not confidential bank data.
-- Thresholds, overlays, and formulae are transparent portfolio-demonstration assumptions.
-- Production use would require governed source data, calibration, model validation, and approval.
-
-## How it connects to the next repo
-
-The exported CSV files are intentionally flat and can be copied to the next repository's `data/external` or replaced with validated production extracts.
+- All portfolio inputs are synthetic and are included for demonstration only.
+- CCF and utilisation behaviour is modelled with simplified, transparent assumptions rather than internal behavioural datasets.
+- The repo is intended for portfolio presentation and workflow demonstration, not for production limit management or regulatory reporting.
