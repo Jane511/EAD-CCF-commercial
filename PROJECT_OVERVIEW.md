@@ -4,7 +4,7 @@ This folder has been rebuilt around a clean README, docs, notebooks, modular Pyt
 
 ## Portfolio role
 
-`EAD-CCF-commercial` is the Exposure at Default and CCF engine for SME products.
+`EAD-CCF-commercial` is the Exposure at Default and CCF engine for the broader commercial lending portfolio.
 
 ## Rebuilt deliverables
 
