@@ -1,6 +1,6 @@
 import pandas as pd
 
-from ead_pipeline import EAD_OUTPUT_PATH, PREPARED_EXPOSURE_PATH, RULES_PATH, calculate_ead, estimate_ccf, load_ccf_rules, write_ead_output
+from .ead_pipeline import EAD_OUTPUT_PATH, PREPARED_EXPOSURE_PATH, RULES_PATH, calculate_ead, estimate_ccf, load_ccf_rules, write_ead_output
 
 
 def main() -> None:

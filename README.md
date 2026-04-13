@@ -90,7 +90,7 @@ Quick start:
 
 ```powershell
 pip install -r requirements.txt
-python -m src.codex_run_pipeline
+python -m src.run_pipeline
 ```
 
 After the run, start with:
@@ -108,12 +108,12 @@ python -m pytest
 Alternative (wrapper script):
 
 ```powershell
-python scripts/run_codex_pipeline.py
+python scripts/run_demo_pipeline.py
 ```
 
 ## Testing and validation
 
-- `tests/test_codex_instruction_pipeline.py` runs the demo pipeline and asserts the expected output files are written.
+- `tests/test_demo_pipeline.py` runs a minimal demo pipeline and asserts the expected output files are written.
 - `outputs/tables/pipeline_validation_report.csv` captures the same checks in a reviewer-friendly table.
 
 ## Limitations / Demo-Only Note

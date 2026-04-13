@@ -1,4 +1,4 @@
-from ead_pipeline import (
+from .ead_pipeline import (
     CCF_SAMPLE_PATH,
     PREPARED_EXPOSURE_PATH,
     RAW_HISTORY_PATH,

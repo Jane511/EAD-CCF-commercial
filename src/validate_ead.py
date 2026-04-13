@@ -1,6 +1,6 @@
 import pandas as pd
 
-from ead_pipeline import (
+from .ead_pipeline import (
     EAD_OUTPUT_PATH,
     PREPARED_EXPOSURE_PATH,
     VALIDATION_REPORT_PATH,

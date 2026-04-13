@@ -1,4 +1,4 @@
-from ead_pipeline import RAW_EXPOSURE_PATH, load_exposures, prepare_exposures, write_prepared_exposures
+from .ead_pipeline import RAW_EXPOSURE_PATH, load_exposures, prepare_exposures, write_prepared_exposures
 
 
 def main() -> None:
